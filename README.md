@@ -1,8 +1,8 @@
 # Student Result Management System
 
-A Python-based Student Result Management System that allows users to manage student records, calculate results, generate reports, and export result data.
+A Python-based Student Result Management System that allows users to manage student records, calculate results, generate reports, view rankings, and export result data.
 
-## Features
+## 🚀 Features
 
 * Add new student records
 * Store marks for multiple subjects
@@ -12,7 +12,7 @@ A Python-based Student Result Management System that allows users to manage stud
 * Automatic Pass/Fail status
 * Search student by roll number
 * View all students
-* Update student name and marks
+* Update student marks
 * Delete student records
 * Class performance report
 * Subject-wise performance report
@@ -22,7 +22,7 @@ A Python-based Student Result Management System that allows users to manage stud
 * Store student data permanently using JSON
 * Input validation and error handling
 
-## Subjects
+## 📚 Subjects
 
 The system currently manages marks for:
 
@@ -32,7 +32,7 @@ The system currently manages marks for:
 * Software Engineering
 * Java
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 * Python
 * JSON
@@ -43,7 +43,7 @@ The system currently manages marks for:
 * Dictionaries
 * Exception Handling
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 Student-Result-Management-System/
@@ -55,44 +55,48 @@ Student-Result-Management-System/
 └── .gitignore
 ```
 
-## How It Works
+## ▶️ How It Works
 
 The application provides a menu-driven interface.
 
 Users can:
 
 1. Add student information and marks.
-2. View existing student records.
+2. View all student records.
 3. Search for a student using the roll number.
-4. Update student information or marks.
+4. Update student marks.
 5. Delete student records.
-6. Generate class performance reports.
+6. Generate a class performance report.
 7. View subject-wise performance.
 8. View student rankings.
-9. Generate an individual result card.
+9. Generate an individual student result card.
 10. Export result data to a CSV file.
 
 Student information is stored in `students.json`, allowing the data to remain available even after the program is closed.
 
-## Result Calculation
+## 📊 Result Calculation
 
-The system calculates:
-
-**Total Marks**
+### Total Marks
 
 ```text
 Total = Sum of marks obtained in all subjects
 ```
 
-**Percentage**
+### Percentage
 
 ```text
 Percentage = Total Marks / Number of Subjects
 ```
 
-A student is marked **Fail** if they score below 40 in any subject.
+### Pass/Fail Status
 
-Otherwise, the grade is calculated according to the percentage.
+A student is marked **PASS** only if they score at least 40 marks in every subject.
+
+If the student scores below 40 in any subject, the status is **FAIL**.
+
+### Grade
+
+The grade is calculated according to the overall percentage.
 
 | Percentage    | Grade |
 | ------------- | ----- |
@@ -103,11 +107,9 @@ Otherwise, the grade is calculated according to the percentage.
 | 50% – 59.99%  | D     |
 | Below 50%     | F     |
 
-## Data Storage
+## 💾 Data Storage
 
 The project uses JSON file handling to store student records.
-
-Example:
 
 ```text
 students.json
@@ -123,7 +125,7 @@ student_results.csv
 
 The exported CSV file can be opened using spreadsheet applications.
 
-## Input Validation
+## ✅ Input Validation
 
 The application validates user input for:
 
@@ -134,7 +136,56 @@ The application validates user input for:
 * Marks outside the 0–100 range
 * Invalid menu choices
 
-## Future Improvements
+## 📈 Reports
+
+The system provides different reports, including:
+
+### Class Report
+
+Displays:
+
+* Total number of students
+* Number of passed students
+* Number of failed students
+* Class average percentage
+* Highest scoring student
+* Lowest scoring student
+
+### Student Ranking
+
+Students are ranked based on their percentage, from highest to lowest.
+
+### Subject-wise Report
+
+Displays the following for each subject:
+
+* Average marks
+* Highest marks
+* Lowest marks
+
+## 📤 CSV Export
+
+The system can export student results into:
+
+```text
+student_results.csv
+```
+
+The CSV file contains:
+
+* Student Name
+* Roll Number
+* Python
+* DBMS
+* Operating Systems
+* Software Engineering
+* Java
+* Total
+* Percentage
+* Grade
+* Status
+
+## 🔮 Future Improvements
 
 Possible future improvements include:
 
@@ -143,19 +194,24 @@ Possible future improvements include:
 * SQLite/MySQL database integration
 * Attendance management
 * PDF result generation
-* Teacher/admin dashboard
+* Teacher/Admin dashboard
 * Web-based version
 * Data visualization charts
 
-## Author
+## 👨‍💻 Author
 
 **Rajan Singh**
 
-BCA Student
-Interested in Software Development, Python and Technology
+BCA Student | Aspiring Software Developer
 
-## Project Status
+GitHub:
+https://github.com/rajansingh8651
+
+LinkedIn:
+https://www.linkedin.com/in/rajansingh8/
+
+## 📌 Project Status
 
 **Completed — Version 1.0**
 
-This project was developed as a practical Python project to improve programming, problem-solving, file handling, data management and application development skills.
+This project was developed as a practical Python project to improve programming, problem-solving, file handling, data management, and application development skills.
